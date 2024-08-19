@@ -1,1 +1,69 @@
 # BackupVuePractice2
+
+Practica 2 - Proyecto Final Vue3 
+
+### Nombre(s) de integrante(s):
+ - Fernando Miguel Iquiza Ramirez 
+
+### Pasos para iniciar el proyecto
+ 1. Clonar el repositorio en tu computadora.
+    git clone https://github.com/fmiquiza/BackupVuePractice2.git
+    - Ingresar al repositorio clonado:
+    cd BackupVuePractice2
+    - Ingresar al folder "asusspediatria":
+    cd asusspediatria
+ 2. Instalar las dependencias con npm install.
+    npm install
+    ### Troubbleshooting
+    - Si hay problemas de permisos ejecutarlo como Administrador/Root:
+    (Por ejemplo en linux/MacOS)
+    sudo npm install
+ 3. Iniciar el proyecto con:
+    npm run serve
+    ### Troubbleshooting 
+    - Si tienes problemas al ejecutarlo, intenta con el siguiente comando (primero como usuario, sino utilizar modo Administrador/sudo) "npm install @vue/cli-service --save-dev"
+    - If you encounter an error with the execution, try running `npm install @vue/cli-service --save-dev
+
+4. Abrir su navegador con el URL recomendado una vez que la aplicación esté corriendo, por ejemplo "local":
+
+    DONE  Compiled successfully in 2379ms                                                                           11:01:19 PM
+
+
+    App running at:
+        - Local:   http://localhost:8080/         
+        - Network: http://192.168.100.4:8080/
+
+5. Ingresar a la siguiente URL para la aplicación "Agenda":
+        http://localhost:8080/asusspediatria
+
+
+
+6. En una nueva terminal (o cmd en Windows), ejecutar:
+cd db 
+(ya en el folder "db" ejecutar lo que sigue)
+json-server --watch db.json --port 4000
+
+P.d.: Para generar más contactos para la BASE DE DATOS, puede utilizar el recurso:
+    - https://json-generator.com/
+    
+    Con la siguiente estructura:
+    [
+        '{{repeat(1, 100)}}',
+        {
+            ID: '{{index() +1 }}', ## change "+1" value to "+#", for example if your database ends on ID: 10 object, you should change this code to "+11" so new generated objects will start with "ID": 11 .
+            name: '{{firstName()}} {{surname()}}',
+            email: '{{email()}}',
+            address: '{{integer(100, 999)}} {{street()}}',
+            phone: '+1 {{phone()}}',
+            country: '{{country()}}',
+            city: '{{city()}}'
+        }
+    ]
+
+    Y presionar el botón GENERATE
+
+    Para minimizar saltos de línea y copiar los objetos por filas, utilizar el siguiente recurso:
+
+    https://jsonformatter.org/
+
+    Copiar el json obtenido previamente, y seleccionar la opción Minify/Compact.
