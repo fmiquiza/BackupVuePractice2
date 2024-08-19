@@ -28,7 +28,7 @@
                 <button type="submit" class="btn btn-lith">Fitrar</button>
             </form>
         </div>
-        <table>
+        <table v-if="apoderadoList && hijoList">
             <thead>
                 <tr>
                     <th>No.</th>
@@ -47,8 +47,8 @@
                     <td>{{ item.fecha }}</td>
                     <td>{{ item.hora }}</td>
                     <td>{{ getPediatra(item.pediatraId) ? getPediatra(item.pediatraId).nombre : '' }}</td>
-                    <td>{{ item.apoderado ? item.apoderado.nombre : '' }}</td>
-                    <td>{{ item.hijo ? item.hijo.nombre : '' }}</td>
+                    <td>{{ getApoderado(item.apoderadoId) ? getApoderado(item.apoderadoId).nombre : '' }}</td>
+          <td>{{ getHijo(item.hijoId) ? getHijo(item.hijoId).nombre : '' }}</td>
                     <td>{{ item.motivo }}</td>
                     <td>
                         <button @click="edit(item)" class="btn btn-dark" style="margin-right: 15px;">Editar</button>
@@ -84,7 +84,9 @@ export default {
             filter: {
                 fecha: null,
                 pediatraId:''
-            }
+            },
+            apoderadoList: [],
+            hijoList: [],
         }
     },
     components: {
@@ -119,7 +121,35 @@ export default {
         },
         getPediatra(pediatraId) {
              return this.pediatraList.find(p => p.id === pediatraId);
-        },  
+        },
+        
+        getApoderado(apoderadoId) {
+            return this.apoderadoList.find(a => a.id === apoderadoId);
+        },
+        getHijo(hijoId) {
+            return this.hijoList.find(h => h.id === hijoId);
+        },
+        getApoderadoList() {
+    const vm = this;
+    this.axios.get(this.baseUrl + "/apoderados")
+      .then(function (response) {
+        vm.apoderadoList = response.data;
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  },
+  getHijoList() {
+    const vm = this;
+    this.axios.get(this.baseUrl + "/hijos")
+      .then(function (response) {
+        vm.hijoList = response.data;
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  },
+
         edit(item) {
             this.itemToEdit = Object.assign({}, item);
             this.showModalEdit = true;
@@ -183,6 +213,8 @@ export default {
     mounted() {
         this.getList();
         this.getPediatraList();
+        this.getApoderadoList();
+        this.getHijoList();
     },
     emits: [] // los eventos personalizados que el componente puede emitir.
 }
