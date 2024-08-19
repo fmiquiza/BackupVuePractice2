@@ -18,7 +18,7 @@
                     <th>Género</th>
                     <th>Alergia(s)</th>
                     <th>Edad</th>
-                    <th>Dueno</th>
+                    <th>Apoderado</th>
                     <th></th>
                 </tr>
             </thead>
