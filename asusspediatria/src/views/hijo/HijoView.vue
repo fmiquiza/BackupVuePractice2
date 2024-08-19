@@ -18,7 +18,6 @@
                     <th>Género</th>
                     <th>Alergia(s)</th>
                     <th>Edad</th>
-                    <th>Apoderado</th>
                     <th></th>
                 </tr>
             </thead>
@@ -29,7 +28,6 @@
                     <td>{{ item.género }}</td>
                     <td>{{ item.alergia }}</td>
                     <td>{{ item.edad }}</td>
-                    <td v-if="item.apoderado">{{ item.apoderado.nombre }}</td>
                     <td>
                         <button @click="irVacunas(item.id)" class="btn btn-info" style="margin-right: 15px;">Vacunas</button>
                         <button @click="edit(item)" class="btn btn-dark" style="margin-right: 15px;">Editar</button>
@@ -75,11 +73,13 @@ export default {
              this.axios.get(this.baseUrl + "/hijos?_expand=apoderado&q=" + this.textToSearch)
              .then(function (response) {
                       vm.itemList = response.data;
-                 // Add a check to ensure that itemList is populated with data
+                      console.log(response.data); // Add this line to inspect the API response data
+                      // Add a check to ensure that itemList is populated with data
                  if (vm.itemList && vm.itemList.length > 0) {
                 // Render the template
                  } else {
                 // Handle the case where itemList is empty
+                    
             }
          })
              .catch(function (error) {
