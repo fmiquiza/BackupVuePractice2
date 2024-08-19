@@ -42,7 +42,7 @@
       </div>
 
       </br>
-      <button type="submit" class="btn btn-primary">Registrar</button>
+      <button type="submit" class="btn btn-primary">Actualizar</button>
     </form>
   </div>
 </template>

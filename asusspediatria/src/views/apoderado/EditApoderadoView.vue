@@ -23,7 +23,7 @@
         <div v-if="errors.direccion" class="invalid-feedback">{{ errors.direccion }}</div>
       </div>
 
-      <button type="submit" class="btn btn-primary">Registrar</button>
+      <button type="submit" class="btn btn-primary">Actualizar</button>
     </form>
   </div>
 </template>
