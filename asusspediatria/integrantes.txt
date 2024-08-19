@@ -1,13 +1,13 @@
-Practica 1 Vue3 
+Practica 2 Final Vue3 
 
 ### Nombre(s) de integrante(s):
  - Fernando Miguel Iquiza Ramirez 
 
 ### Pasos para iniciar el proyecto
- 1. Clonar el repositorio en tu computadora.
+ 1. Clonar el repositorio en tu computadora
     git clone https://github.com/fmiquiza/BackupVuePractice2.git
     - Ingresar al repositorio clonado:
-    cd VueProjects
+    cd BackupVuePractice2
     - Ingresar al folder "asusspediatria":
     cd asusspediatria
  2. Instalar las dependencias con npm install.
