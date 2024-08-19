@@ -1,0 +1,475 @@
+{
+  "apoderados": [
+    {
+      "id": "1",
+      "nombre": "Mathis Barrett",
+      "telefono": "+1 (942) 531-3943",
+      "direccion": "773 Lawton Street",
+      "hijos": [
+        {
+          "id": "1",
+          "nombre": "Jason Barret",
+          "género": "Masculino",
+          "alergia": "Nueces",
+          "edad": "5",
+          "apoderadoId": "1"
+        },
+        {
+          "id": "2",
+          "nombre": "Milena Barret",
+          "género": "Femenino",
+          "alergia": "Ninguna",
+          "edad": "2",
+          "apoderadoId": "1"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Orr Bernard",
+      "telefono": "+1 (964) 565-2937",
+      "direccion": "726 Riverdale Avenue" 
+    },
+    {
+      "id": "3",
+      "nombre": "Meadows Wong",
+      "telefono": "+1 (944) 483-2465",
+      "direccion": "773 Lawton Street"
+    },
+    {
+      "id": "4",
+      "nombre": "Edwina Martin",
+      "telefono": "+1 (985) 410-2964",
+      "direccion": "190 Emerald Street"
+    },
+    {
+      "id": "5",
+      "nombre": "Pratt Bradshaw",
+      "telefono": "+1 (913) 538-2340",
+      "direccion": "220 Interborough Parkway"
+    },
+    {
+      "id": "6",
+      "nombre": "Tucker Franco",
+      "telefono": "+1 (995) 553-2746",
+      "direccion": "209 Moore Street"
+    },
+    {
+      "id": "7",
+      "nombre": "Nola Buckner",
+      "telefono": "+1 (971) 524-3314",
+      "direccion": "998 Thames Street"
+    },
+    {
+      "id": "8",
+      "nombre": "Edwards Ferguson",
+      "telefono": "+1 (904) 550-2762",
+      "direccion": "437 Linden Boulevard"
+    },
+    {
+      "id": "9",
+      "nombre": "Elvira Dyer",
+      "telefono": "+1 (929) 498-2956",
+      "direccion": "790 Horace Court"
+    },
+    {
+      "id": "10",
+      "nombre": "Casey Young",
+      "telefono": "+1 (892) 411-2530",
+      "direccion": "159 Lewis Avenue"
+    }
+  ],
+  "hijos": [
+    {
+      "id": "1",
+      "nombre": "Jason Barret",
+      "género": "Masculino",
+      "alergia": "Leche",
+      "edad": "5",
+      "apoderadoId": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "Milena Barret",
+      "género": "Femenino",
+      "alergia": "Nueces",
+      "edad": "2",
+      "apoderadoId": "1"
+    },
+    {
+      "id": "3",
+      "nombre": "Jenny Bernard",
+      "género": "Femenino",
+      "alergia": "Ninguna",
+      "edad": "4",
+      "apoderadoId": "2"
+    },
+    {
+      "id": "4",
+      "nombre": "Charles Wong",
+      "género": "Masculino",
+      "alergia": "Ninguna",
+      "edad": "7",
+      "apoderadoId": "3"
+    },
+    {
+      "id": "5",
+      "nombre": "Jessica Martin",
+      "género": "Femenino",
+      "alergia": "Leche",
+      "edad": "6",
+      "apoderadoId": "4"
+    },
+    {
+      "id": "6",
+      "nombre": "Robert Bradshaw",
+      "género": "Masculino",
+      "alergia": "Canela",
+      "edad": "2",
+      "apoderadoId": "5"
+    },
+    {
+      "id": "7",
+      "nombre": "Sarah",
+      "género": "Femenino",
+      "alergia": "Nueces",
+      "edad": "3",
+      "apoderadoId": "6"
+    },
+    {
+      "id": "8",
+      "nombre": "Benjamin",
+      "género": "Masculino",
+      "alergia": "Ninguno",
+      "edad": "4",
+      "apoderadoId": "7"
+    },
+    {
+      "id": "9",
+      "nombre": "CHelsey",
+      "género": "Femenino",
+      "alergia": "Salmón",
+      "edad": "5",
+      "apoderadoId": "8"
+    },
+    {
+      "id": "10",
+      "nombre": "Bethany",
+      "género": "Femenino",
+      "alergia": "Papaya",
+      "edad": "1",
+      "apoderadoId": "9"
+    },
+    {
+      "id": "11",
+      "nombre": "Steve",
+      "género": "Masculino",
+      "alergia": "Ninguno",
+      "edad": "6",
+      "apoderadoId": "10"
+    },
+    {
+      "id": "8847",
+      "nombre": "John Bonachon",
+      "género": "Masculino",
+      "alergia": "Chocolate",
+      "edad": 2,
+      "apoderadoId": "2"
+    },
+    {
+      "id": "c546",
+      "nombre": "Malcolm",
+      "género": "Masculino",
+      "alergia": "Nueces",
+      "edad": 3,
+      "apoderadoId": "9"
+    },
+    {
+      "id": "1baf",
+      "nombre": "Brandon",
+      "género": "Masculino",
+      "alergia": "Ninguno",
+      "edad": 4,
+      "apoderadoId": "6"
+    }
+  ],
+  "pediatras": [
+    {
+      "id": "1",
+      "nombre": "Dra. Lakisha Mccullough",
+      "especialidad": "Cirugía",
+      "telefono": "+1 (974) 415-2100"
+    },
+    {
+      "id": "2",
+      "nombre": "Dr. Burgess Cote",
+      "especialidad": "Pediatría oncológica",
+      "telefono": "+1 (962) 479-3192"
+    },
+    {
+      "id": "3",
+      "nombre": "Dra. Palmer Drake",
+      "especialidad": "Medicina Interna",
+      "telefono": "+1 (968) 466-3449"
+    },
+    {
+      "id": "4",
+      "nombre": "Dr. Frank Justice",
+      "especialidad": "Pediatría Cardiovascular",
+      "telefono": "+1 (860) 598-3110"
+    },
+    {
+      "id": "5",
+      "nombre": "Dra. Coleen Mckenzie",
+      "especialidad": "Cardiología",
+      "telefono": "+1 (871) 563-3741"
+    }
+  ],
+  "citas": [
+    {
+      "id": "1",
+      "apoderadoId": "1",
+      "hijoId": "1",
+      "pediatraId": "1",
+      "fecha": "2024-08-01",
+      "hora": "10:00",
+      "motivo": "Chequeo general"
+    },
+    {
+      "id": "2",
+      "apoderadoId": "2",
+      "hijoId": "3",
+      "pediatraId": "2",
+      "fecha": "2024-08-02",
+      "hora": "14:00",
+      "motivo": "Revisión cardiológica"
+    },
+    {
+      "id": "3",
+      "apoderadoId": "3",
+      "hijoId": "4",
+      "pediatraId": "3",
+      "fecha": "2024-08-03",
+      "hora": "11:00",
+      "motivo": "Vacunación"
+    },
+    {
+      "id": "4",
+      "apoderadoId": "4",
+      "hijoId": "5",
+      "pediatraId": "4",
+      "fecha": "2024-08-04",
+      "hora": "12:00",
+      "motivo": "Chequeo general"
+    },
+    {
+      "id": "5",
+      "apoderadoId": "5",
+      "hijoId": "6",
+      "pediatraId": "5",
+      "fecha": "2024-08-05",
+      "hora": "09:00",
+      "motivo": "Revisión cardiológica"
+    },
+    {
+      "id": "6",
+      "apoderadoId": "6",
+      "hijoId": "7",
+      "pediatraId": "1",
+      "fecha": "2024-08-06",
+      "hora": "10:30",
+      "motivo": "Chequeo general"
+    },
+    {
+      "id": "7",
+      "apoderadoId": "7",
+      "hijoId": "8",
+      "pediatraId": "2",
+      "fecha": "2024-08-07",
+      "hora": "11:30",
+      "motivo": "Chequeo dermatológico"
+    },
+    {
+      "id": "8",
+      "apoderadoId": "8",
+      "hijoId": "9",
+      "pediatraId": "3",
+      "fecha": "2024-08-08",
+      "hora": "13:00",
+      "motivo": "Chequeo general"
+    },
+    {
+      "id": "9",
+      "apoderadoId": "9",
+      "hijoId": "10",
+      "pediatraId": "4",
+      "fecha": "2024-08-09",
+      "hora": "14:30",
+      "motivo": "Chequeo general"
+    },
+    {
+      "id": "10",
+      "apoderadoId": "10",
+      "hijoId": "11",
+      "pediatraId": "5",
+      "fecha": "2024-08-10",
+      "hora": "09:30",
+      "motivo": "Chequeo cardiológico"
+    },
+    {
+      "id": "d258",
+      "pediatraId": "4",
+      "apoderadoId": "4",
+      "hijoId": "5",
+      "motivo": "Revisión cardiológica",
+      "fecha": "2024-04-28",
+      "hora": "13:42"
+    },
+    {
+      "id": "304d",
+      "pediatraId": "2",
+      "apoderadoId": "9",
+      "hijoId": "c546",
+      "motivo": "Vacunación",
+      "fecha": "2024-09-19",
+      "hora": "20:04"
+    }
+  ],
+  "vacunas": [
+    {
+      "id": "1",
+      "nombre": "DPT",
+      "descripcion": "Descripción de la Vacuna A"
+    },
+    {
+      "id": "2",
+      "nombre": "Varicela",
+      "descripcion": "virus de la varicela-zóster"
+    },
+    {
+      "id": "3",
+      "nombre": "Influenza",
+      "descripcion": "enfermedad respiratoria contagiosa provocada por los virus de la influenza que infectan la nariz, la garganta"
+    },
+    {
+      "id": "4",
+      "nombre": "Neumococo",
+      "descripcion": "Refuerzo contra bacteria estreptocócica"
+    },
+    {
+      "id": "5",
+      "nombre": "Rotavirus",
+      "descripcion": "Esta vacuna protege contra nuevas infecciones por Rotavirus evitando que se desarrolle una enfermedad grave, con deshidratación y muerte de tu hija (o)."
+    }
+  ],
+  "hijosVacunas": [
+    {
+      "id": "1",
+      "hijoId": "1",
+      "vacunaId": "1",
+      "fecha": "2024-06-01"
+    },
+    {
+      "id": "2",
+      "hijoId": "1",
+      "vacunaId": "2",
+      "fecha": "2024-07-01"
+    },
+    {
+      "id": "3",
+      "hijoId": "2",
+      "vacunaId": "1",
+      "fecha": "2024-07-15"
+    },
+    {
+      "id": "4",
+      "hijoId": "3",
+      "vacunaId": "3",
+      "fecha": "2024-08-01"
+    },
+    {
+      "id": "5",
+      "hijoId": "4",
+      "vacunaId": "4",
+      "fecha": "2024-08-02"
+    },
+    {
+      "id": "6",
+      "hijoId": "5",
+      "vacunaId": "5",
+      "fecha": "2024-08-03"
+    },
+    {
+      "id": "7",
+      "hijoId": "6",
+      "vacunaId": "1",
+      "fecha": "2024-08-04"
+    },
+    {
+      "id": "8",
+      "hijoId": "7",
+      "vacunaId": "2",
+      "fecha": "2024-08-05"
+    },
+    {
+      "id": "9",
+      "hijoId": "8",
+      "vacunaId": "3",
+      "fecha": "2024-08-06"
+    },
+    {
+      "id": "10",
+      "hijoId": "9",
+      "vacunaId": "4",
+      "fecha": "2024-08-07"
+    },
+    {
+      "id": "11",
+      "hijoId": "10",
+      "vacunaId": "5",
+      "fecha": "2024-08-08"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "name": "Jessica",
+      "email": "jessica@sedes.bo",
+      "password": "Advance123",
+      "role": "secretaria",
+      "token": "s8dfalsdf82w2324wdfsd9f0w9exdi8s"
+    },
+    {
+      "id": "2",
+      "name": "Palmer",
+      "email": "pdrake@sedes.bo",
+      "password": "Advance123",
+      "role": "pediatra",
+      "token": "sdffalsdf82weids8dfasdfsd9f0w9exdi8s"
+    },
+    {
+      "id": "3",
+      "name": "Tina",
+      "email": "tpallan@sedes.bo",
+      "password": "Advance123",
+      "role": "secretaria",
+      "token": "s8dfalsdf82fsds8dfasdfsd9f0w9sdfs"
+    },
+    {
+      "id": "4",
+      "name": "Frank",
+      "email": "fbarret@sedes.bo",
+      "password": "Advance123",
+      "role": "Pediatra Cardiovascular",
+      "token": "asdfasdfsf82weids8dfasdfsd9f0fsi8s"
+    },
+    {
+      "id": "5",
+      "name": "Vicus",
+      "email": "vvandermer@sedes.bo",
+      "password": "Advance123",
+      "role": "admin",
+      "token": "2e34sef82weids8dfasdfsd9f0w9exdi8s"
+    }
+  ]
+}
