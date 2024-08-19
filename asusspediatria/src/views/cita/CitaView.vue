@@ -19,11 +19,12 @@
                 <input type="date" id="fecha" v-model="filter.fecha" placeholder="Ingrese la fecha" />
 
                 <label for="pediatra"> Pediatra: </label>
-                <select id="pediatra" v-model="filter.pediatraId">
+                <select id="pediatra" v-model="filter.pediatraId" @change="updatePediatra">
                     <option value="">Todos</option>
                     <option :value="pediatra.id" v-for="(pediatra, index) in pediatraList" :key="`pediatra-${index}`">{{ pediatra.nombre }}
                     </option>
                   </select>
+                  <span>{{ selectedPediatra ? selectedPediatra.nombre : '' }}</span>
                 <button type="submit" class="btn btn-lith">Fitrar</button>
             </form>
         </div>
@@ -45,7 +46,7 @@
                     <td>{{ 1 + index }}</td>
                     <td>{{ item.fecha }}</td>
                     <td>{{ item.hora }}</td>
-                    <td>{{ item.pediatra ? item.pediatra.nombre : '' }}</td>
+                    <td>{{ getPediatra(item.pediatraId) ? getPediatra(item.pediatraId).nombre : '' }}</td>
                     <td>{{ item.apoderado ? item.apoderado.nombre : '' }}</td>
                     <td>{{ item.hijo ? item.hijo.nombre : '' }}</td>
                     <td>{{ item.motivo }}</td>
@@ -116,6 +117,9 @@ export default {
                     console.error(error);
                 });
         },
+        getPediatra(pediatraId) {
+             return this.pediatraList.find(p => p.id === pediatraId);
+        },  
         edit(item) {
             this.itemToEdit = Object.assign({}, item);
             this.showModalEdit = true;
@@ -168,7 +172,10 @@ export default {
         ...mapGetters(['doubleCount', 'getBaseUrl']),
         baseUrl() {
             return this.getBaseUrl
-        }
+        },
+        selectedPediatra(pediatraId) {
+            return this.pediatraList.find(p => p.id === pediatraId);
+     }
     },
     props: {
         // propiedades que el componente puede recibir.

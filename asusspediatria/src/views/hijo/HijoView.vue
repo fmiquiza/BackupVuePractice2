@@ -1,5 +1,9 @@
 <template>
     <div>
+        <!-- Add a loader component -->
+        <div v-if="loading" class="loader">
+            <img src="loader.gif" alt="Loading...">
+        </div>
         <Modal v-model:modelValue="showModalNuevo">
             <HijoNew @on-register="onRegister($event)"/>
         </Modal>
@@ -10,7 +14,7 @@
         <button @click="showModalNuevo = true" class="btn btn-primary">Nuevo</button>
         <button @click="buscar()" class="btn btn-lith" style="float:right">Buscar</button>
         <input type="search" style="float:right" v-model="textToSearch" @search="buscar()">
-        <table>
+        <table v-if="!loading">
             <thead>
                 <tr>
                     <th>No.</th>
@@ -56,7 +60,9 @@ export default {
             showModalEdit: false,
             itemToEdit: null,
             textToSearch: '',
-            itemList: []
+            itemList: [],
+            loading: false
+            
         }
     },
     components: {
@@ -69,6 +75,7 @@ export default {
         // métodos que se pueden llamar desde la plantilla o desde otras partes del componente.
         ...mapActions(['increment']),
         getList() {
+            this.loading = true; // Set loading to true
             const vm = this;
              this.axios.get(this.baseUrl + "/hijos?_expand=apoderado&q=" + this.textToSearch)
              .then(function (response) {
@@ -78,9 +85,10 @@ export default {
                  if (vm.itemList && vm.itemList.length > 0) {
                 // Render the template
                  } else {
-                // Handle the case where itemList is empty
+                     // Handle the case where itemList is empty
                     
             }
+            vm.loading = false;
          })
              .catch(function (error) {
                   console.error(error);
@@ -143,4 +151,17 @@ export default {
 }
 </script>
   
-<style></style>
+<style>
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loader img {
+    width: 50px;
+    height: 50px;
+}
+</style>

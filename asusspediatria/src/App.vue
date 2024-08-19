@@ -1,7 +1,6 @@
 <template>
   <Menu>
     <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
     <router-link to="/apoderado" v-if="canSee(['admin','secretaria','pediatra'])">Apoderados</router-link>
     <router-link to="/hijo" v-if="canSee(['admin','pediatra'])">Hijos</router-link>
     <router-link to="/cita" v-if="canSee(['admin','secretaria'])">Citas</router-link>
