@@ -26,7 +26,7 @@
       </div>
 
       <div class="form-group">
-        <label for="edad">Edad (Anios):</label>
+        <label for="edad">Edad (años):</label>
         <input type="number" id="edad" v-model="form.edad" :class="{ 'is-invalid': errors.edad }"
           placeholder="Ingrese la edad" />
         <div v-if="errors.edad" class="invalid-feedback">{{ errors.edad }}</div>
@@ -56,7 +56,7 @@ export default {
       apoderadoList: [],
       géneroList: [
         "Masculino",
-        "gato"
+        "Femenino"
       ],
       errors: {}
     };
